@@ -1,0 +1,14 @@
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\bin\Debug\net8.0\ProjectOOP1.exe
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\bin\Debug\net8.0\ProjectOOP1.deps.json
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\bin\Debug\net8.0\ProjectOOP1.runtimeconfig.json
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\bin\Debug\net8.0\ProjectOOP1.dll
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\bin\Debug\net8.0\ProjectOOP1.pdb
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\obj\Debug\net8.0\ProjectOOP1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\obj\Debug\net8.0\ProjectOOP1.AssemblyInfoInputs.cache
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\obj\Debug\net8.0\ProjectOOP1.AssemblyInfo.cs
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\obj\Debug\net8.0\ProjectOOP1.csproj.CoreCompileInputs.cache
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\obj\Debug\net8.0\ProjectOOP1.dll
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\obj\Debug\net8.0\refint\ProjectOOP1.dll
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\obj\Debug\net8.0\ProjectOOP1.pdb
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\obj\Debug\net8.0\ProjectOOP1.genruntimeconfig.cache
+C:\Users\AD\Desktop\Code\Fol1\B2\ProjectOOP1\ProjectOOP1\obj\Debug\net8.0\ref\ProjectOOP1.dll
