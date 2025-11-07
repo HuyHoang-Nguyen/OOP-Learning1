@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -86,6 +87,16 @@ namespace ProjectOOP1
             Console.WriteLine($"\nSo dien thoai: {countPhone}");
             Console.WriteLine($"So phu kien: {countAccessory}");
         }
+
+        //Tim kiem san pham trong khoang gia
+        public List<Product> SearchByPriceRange(decimal minPrice, decimal maxPrice)
+        {
+            var product = products.OfType<Product>().Where(p => p.salePrice >= minPrice && p.salePrice <= maxPrice).ToList();
+            if (!product.Any())
+                Console.WriteLine("Khong tim thay san pham trong khoang gia nay");
+
+            return product;
+        }
     }
 
     //chuong trinh chinh
@@ -98,9 +109,9 @@ namespace ProjectOOP1
                 StoreManager store = new StoreManager();
 
                 // Tao san pham
-                var phone1 = new Product.MobilePhone("IP16", "iPhone 16", "Apple", 80000, 16, 8000000, 8700000, 24);
+                var phone1 = new Product.MobilePhone("IP16", "iPhone 16", "Apple", 8000, 16, 8000000, 8700000, 24);
                 var phone2 = new Product.MobilePhone("SSS24", "Samsung S24", "Samsung", 7800, 18, 5600000, 6200000, 51);
-                var phone3 = new Product.MobilePhone("SS18", "Samsung 18", "Samsung", 500, 6, 3200000, 3600000, 16);
+                var phone3 = new Product.MobilePhone("SS18", "Samsung 18", "Samsung", 5000, 6, 3200000, 3600000, 16);
                 var accessory1 = new Product.Accessory("TNB01", "Tai nghe Bluetooth", "Tai nghe", "Nhua", 200000, 260000, 150);
                 //var accessory2 = new Product.Accessory("TNB01", "Bluetooth Headphone", "Tai nghe", "Nhua", 400000, 500000, 200);
 
@@ -130,16 +141,29 @@ namespace ProjectOOP1
                         item.DisplayInfo();
                     }
 
-                    // Xoa san pham
-                    Console.WriteLine("\nXoa san pham co ma IP16");
-                    store.RemoveProduct("IP16");
-                    Console.WriteLine("Xoa san pham co ma IP01");
-                    store.RemoveProduct("IP01");
+                    //Tim kiem san pham theo khoang gia
+                    decimal min = 3000000;
+                    decimal max = 6000000;
+                    Console.WriteLine($"\nTim kiem san pham co gia tu: {min} - {max}");
+                    var found2 = store.SearchByPriceRange(min, max);
+                    if (found2.Any())
+                    {
+                        foreach (var item in found2)
+                        {
+                            item.DisplayInfo();
+                        }
+                    }
+                        // Xoa san pham
+                        Console.WriteLine("\nXoa san pham co ma IP16");
+                        store.RemoveProduct("IP16");
+                        Console.WriteLine("Xoa san pham co ma IP01");
+                        store.RemoveProduct("IP01");
 
-                    // Hien thi lai danh sach
-                    store.DisplayAllProducts();
+                        // Hien thi lai danh sach
+                        store.DisplayAllProducts();
+                    }
                 }
-            }
+
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
