@@ -8,6 +8,7 @@ class Product
     private decimal ImportPrice;
     private decimal SalePrice;
     private int StockQuantity;
+    public decimal Profit => SalePrice - ImportPrice;
 
     public string productId
     {
@@ -76,8 +77,7 @@ class Product
     }
     public void CalculateProfit()
     {
-        decimal profit = salePrice - importPrice;
-        Console.WriteLine("Loi nhuan la: " + profit);
+        Console.WriteLine("Loi nhuan la: " + Profit);
     }
     public virtual void CalculateDisount()
     {
@@ -89,6 +89,7 @@ class Product
         decimal stockValue = importPrice * stockQuantity;
         Console.WriteLine("Gia tri ton kho la: " + stockValue);
     }
+
 
     //public static void main(string[] args)
     //{
