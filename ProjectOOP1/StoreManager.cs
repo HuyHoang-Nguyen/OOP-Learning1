@@ -106,92 +106,92 @@ namespace ProjectOOP1
                 Console.WriteLine("Khong tim thay thong tin..");
             return product;
         }
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                try
-                {
-                    StoreManager store = new StoreManager();
+        //class Program
+        //{
+        //    static void Main(string[] args)
+        //    {
+        //        try
+        //        {
+        //            StoreManager store = new StoreManager();
 
-                    // Tao san pham
-                    var phone1 = new Product.MobilePhone("IP16", "iPhone 16", "Apple", 8000, 16, 8000000, 8700000, 24);
-                    var phone2 = new Product.MobilePhone("SSS24", "Samsung S24", "Samsung", 7800, 18, 5600000, 6200000, 51);
-                    var phone3 = new Product.MobilePhone("SS18", "Samsung 18", "Samsung", 5000, 6, 3200000, 3600000, 16);
-                    var accessory1 = new Product.Accessory("TNB01", "Tai nghe Bluetooth", "Tai nghe", "Nhua", 200000, 260000, 150);
-                    //var accessory2 = new Product.Accessory("TNB01", "Bluetooth Headphone", "Tai nghe", "Nhua", 400000, 500000, 200);
+        //            // Tao san pham
+        //            var phone1 = new Product.MobilePhone("IP16", "iPhone 16", "Apple", 8000, 16, 8000000, 8700000, 24);
+        //            var phone2 = new Product.MobilePhone("SSS24", "Samsung S24", "Samsung", 7800, 18, 5600000, 6200000, 51);
+        //            var phone3 = new Product.MobilePhone("SS18", "Samsung 18", "Samsung", 5000, 6, 3200000, 3600000, 16);
+        //            var accessory1 = new Product.Accessory("TNB01", "Tai nghe Bluetooth", "Tai nghe", "Nhua", 200000, 260000, 150);
+        //            //var accessory2 = new Product.Accessory("TNB01", "Bluetooth Headphone", "Tai nghe", "Nhua", 400000, 500000, 200);
 
-                    // Them vao danh sach
-                    store.AddProduct(phone1);
-                    store.AddProduct(phone2);
-                    store.AddProduct(phone3);
-                    store.AddProduct(accessory1);
-                    //store.AddProduct(accessory2);
+        //            // Them vao danh sach
+        //            store.AddProduct(phone1);
+        //            store.AddProduct(phone2);
+        //            store.AddProduct(phone3);
+        //            store.AddProduct(accessory1);
+        //            //store.AddProduct(accessory2);
 
-                    // Hien thi danh sach
-                    store.DisplayAllProducts();
-                    store.CountProductsByType();
+        //            // Hien thi danh sach
+        //            store.DisplayAllProducts();
+        //            store.CountProductsByType();
 
-                    //Tim kiem san pham
-                    Console.WriteLine("\nTim san pham co ma 'SSS24':");
-                    var found = store.SearchByProductId("SSS24");
-                    found.DisplayInfo();
+        //            //Tim kiem san pham
+        //            Console.WriteLine("\nTim san pham co ma 'SSS24':");
+        //            var found = store.SearchByProductId("SSS24");
+        //            found.DisplayInfo();
 
-                    //Tim kiem san pham theo hang san xuat
-                    Console.WriteLine("\nTim kiem san pham co hang san xuat: Samsung");
-                    var found1 = store.SearchPhoneByManufacturer("Samsung");
-                    if (found1.Any())
-                    {
-                        foreach (var item in found1)
-                        {
-                            item.DisplayInfo();
-                            Console.WriteLine("-------------------");
-                        }
+        //            //Tim kiem san pham theo hang san xuat
+        //            Console.WriteLine("\nTim kiem san pham co hang san xuat: Samsung");
+        //            var found1 = store.SearchPhoneByManufacturer("Samsung");
+        //            if (found1.Any())
+        //            {
+        //                foreach (var item in found1)
+        //                {
+        //                    item.DisplayInfo();
+        //                    Console.WriteLine("-------------------");
+        //                }
 
-                        //Tim kiem san pham theo khoang gia
-                        decimal min = 3000000;
-                        decimal max = 9000000;
-                        Console.WriteLine($"\nTim kiem san pham co gia tu: {min} - {max}");
-                        var found2 = store.SearchByPriceRange(min, max);
-                        if (found2.Any())
-                        {
-                            foreach (var item in found2)
-                            {
-                                item.DisplayInfo();
-                                Console.WriteLine("------------------");
-                            }
-                        }
+        //                //Tim kiem san pham theo khoang gia
+        //                decimal min = 3000000;
+        //                decimal max = 9000000;
+        //                Console.WriteLine($"\nTim kiem san pham co gia tu: {min} - {max}");
+        //                var found2 = store.SearchByPriceRange(min, max);
+        //                if (found2.Any())
+        //                {
+        //                    foreach (var item in found2)
+        //                    {
+        //                        item.DisplayInfo();
+        //                        Console.WriteLine("------------------");
+        //                    }
+        //                }
 
-                        //Hien thi top san pham co doanh thu cao nhat
-                        int top = 3;
-                        Console.WriteLine($"\nTop {top} san pham co loi nhuan cao nhat: ");
-                        var found3 = store.GetTopProfitProducts(top);
-                        if (found3.Any())
-                        {
-                            foreach (var item in found3)
-                            {
-                                item.DisplayInfo();
-                                item.CalculateProfit();
-                                Console.WriteLine("------------------");
-                            }
-                        }
+        //                //Hien thi top san pham co doanh thu cao nhat
+        //                int top = 3;
+        //                Console.WriteLine($"\nTop {top} san pham co loi nhuan cao nhat: ");
+        //                var found3 = store.GetTopProfitProducts(top);
+        //                if (found3.Any())
+        //                {
+        //                    foreach (var item in found3)
+        //                    {
+        //                        item.DisplayInfo();
+        //                        item.CalculateProfit();
+        //                        Console.WriteLine("------------------");
+        //                    }
+        //                }
 
-                        // Xoa san pham
-                        Console.WriteLine("\nXoa san pham co ma IP16");
-                        store.RemoveProduct("IP16");
-                        Console.WriteLine("Xoa san pham co ma IP01");
-                        store.RemoveProduct("IP01");
+        //                // Xoa san pham
+        //                Console.WriteLine("\nXoa san pham co ma IP16");
+        //                store.RemoveProduct("IP16");
+        //                Console.WriteLine("Xoa san pham co ma IP01");
+        //                store.RemoveProduct("IP01");
 
-                        // Hien thi lai danh sach
-                        store.DisplayAllProducts();
-                    }
-                }
+        //                // Hien thi lai danh sach
+        //                store.DisplayAllProducts();
+        //            }
+        //        }
 
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-            }
-        }
+        //        catch (Exception ex)
+        //        {
+        //            Console.WriteLine(ex.Message);
+        //        }
+        //    }
+        //}
     }
 }
