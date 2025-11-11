@@ -84,10 +84,10 @@ class Product
         Console.WriteLine("Giam gia: 0%");
     }
 
-    public virtual void CalculateTotalInventoryValue()
+    public virtual decimal CalculateInventoryValue()
     {
         decimal stockValue = importPrice * stockQuantity;
-        Console.WriteLine("Gia tri ton kho la: " + stockValue);
+        return stockValue;
     }
 
 

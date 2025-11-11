@@ -45,7 +45,8 @@ namespace ProjectOOP1
             var product = products.FirstOrDefault(p => p.productId == productId);
             if (product == null)
                 Console.WriteLine("Khong tim thay san pham co ma nay..");
-            return product;
+                return product;
+            
         }
 
         //Tim theo hang san xuat
@@ -106,6 +107,17 @@ namespace ProjectOOP1
                 Console.WriteLine("Khong tim thay thong tin..");
             return product;
         }
+
+        //Tinh gia tri hang ton kho
+        public static decimal CalculateTotalInventoryValue(List<Product> products)
+        {
+            decimal total = 0;
+            foreach (var product in products)
+            {
+                total += product.CalculateInventoryValue();
+            }
+               return total;
+        }
         //class Program
         //{
         //    static void Main(string[] args)
@@ -132,7 +144,7 @@ namespace ProjectOOP1
         //            store.DisplayAllProducts();
         //            store.CountProductsByType();
 
-        //            //Tim kiem san pham
+        //            //Tim kiem san pham theo ma
         //            Console.WriteLine("\nTim san pham co ma 'SSS24':");
         //            var found = store.SearchByProductId("SSS24");
         //            found.DisplayInfo();
