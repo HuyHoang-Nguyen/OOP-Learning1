@@ -109,7 +109,7 @@ namespace ProjectOOP1
         }
 
         //Tinh gia tri hang ton kho
-        public static decimal CalculateTotalInventoryValue(List<Product> products)
+        public decimal CalculateInventoryValue()
         {
             decimal total = 0;
             foreach (var product in products)

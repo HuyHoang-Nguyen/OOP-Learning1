@@ -175,8 +175,10 @@ namespace ProjectOOP1
                                 int input5 = int.Parse(Console.ReadLine());
                                 switch (input5)
                                 {
-                                    case 1: 
-                                        decimal totalStockValue = 
+                                    case 1:
+                                        decimal totalValue = store.CalculateInventoryValue();
+                                        Console.WriteLine($"Total inventory value: {totalValue}");
+                                        break;
 
                                     case 2:
                                         Console.Write("Top: ");

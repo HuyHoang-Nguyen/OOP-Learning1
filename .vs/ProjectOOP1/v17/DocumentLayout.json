@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\AD\\Desktop\\Code\\Fol1\\B2\\ProjectOOP1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91DF720B-77B7-4DD2-A3AB-4137825B5A1E}|ProjectOOP1\\ProjectOOP1.csproj|c:\\users\\ad\\desktop\\code\\fol1\\b2\\projectoop1\\projectoop1\\storemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91DF720B-77B7-4DD2-A3AB-4137825B5A1E}|ProjectOOP1\\ProjectOOP1.csproj|solutionrelative:projectoop1\\storemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{91DF720B-77B7-4DD2-A3AB-4137825B5A1E}|ProjectOOP1\\ProjectOOP1.csproj|c:\\users\\ad\\desktop\\code\\fol1\\b2\\projectoop1\\projectoop1\\appmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91DF720B-77B7-4DD2-A3AB-4137825B5A1E}|ProjectOOP1\\ProjectOOP1.csproj|solutionrelative:projectoop1\\appmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91DF720B-77B7-4DD2-A3AB-4137825B5A1E}|ProjectOOP1\\ProjectOOP1.csproj|c:\\users\\ad\\desktop\\code\\fol1\\b2\\projectoop1\\projectoop1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91DF720B-77B7-4DD2-A3AB-4137825B5A1E}|ProjectOOP1\\ProjectOOP1.csproj|solutionrelative:projectoop1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91DF720B-77B7-4DD2-A3AB-4137825B5A1E}|ProjectOOP1\\ProjectOOP1.csproj|c:\\users\\ad\\desktop\\code\\fol1\\b2\\projectoop1\\projectoop1\\storemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91DF720B-77B7-4DD2-A3AB-4137825B5A1E}|ProjectOOP1\\ProjectOOP1.csproj|solutionrelative:projectoop1\\storemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91DF720B-77B7-4DD2-A3AB-4137825B5A1E}|ProjectOOP1\\ProjectOOP1.csproj|c:\\users\\ad\\desktop\\code\\fol1\\b2\\projectoop1\\projectoop1\\assembly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,19 +26,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AppMenu.cs",
               "DocumentMoniker": "C:\\Users\\AD\\Desktop\\Code\\Fol1\\B2\\ProjectOOP1\\ProjectOOP1\\AppMenu.cs",
               "RelativeDocumentMoniker": "ProjectOOP1\\AppMenu.cs",
               "ToolTip": "C:\\Users\\AD\\Desktop\\Code\\Fol1\\B2\\ProjectOOP1\\ProjectOOP1\\AppMenu.cs",
               "RelativeToolTip": "ProjectOOP1\\AppMenu.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAQwLIAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAQwLkAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T09:04:46.506Z"
+              "WhenOpened": "2025-11-10T09:04:46.506Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -54,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\AD\\Desktop\\Code\\Fol1\\B2\\ProjectOOP1\\ProjectOOP1\\Program.cs",
               "RelativeDocumentMoniker": "ProjectOOP1\\Program.cs",
@@ -62,17 +63,18 @@
               "RelativeToolTip": "ProjectOOP1\\Program.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAIwFkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T02:06:00.618Z"
+              "WhenOpened": "2025-10-30T02:06:00.618Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "StoreManager.cs",
               "DocumentMoniker": "C:\\Users\\AD\\Desktop\\Code\\Fol1\\B2\\ProjectOOP1\\ProjectOOP1\\StoreManager.cs",
               "RelativeDocumentMoniker": "ProjectOOP1\\StoreManager.cs",
               "ToolTip": "C:\\Users\\AD\\Desktop\\Code\\Fol1\\B2\\ProjectOOP1\\ProjectOOP1\\StoreManager.cs",
               "RelativeToolTip": "ProjectOOP1\\StoreManager.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAwwGYAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAADwv3QAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T09:26:24.81Z",
               "EditorCaption": ""
